@@ -1,37 +1,8 @@
 .expense-item {
   display: flex;
   background-color: #504855;
-  border-radius: 12px;
-  width: 60%;
   color: white;
   margin: 20px auto;
-}
-
-.expense-date {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #252525;
-  margin: 10px;
-  width: 80px;
-  height: 85px;
-  border: 1px solid white;
-  border-radius: 12px;
-}
-
-.expense-date__month {
-  font-size: .75rem;
-  font-weight: bold;
-}
-
-.expense-date__year {
-  font-size: .75rem;
-}
-
-.expense-date__day {
- font-size: 1.5rem;
- font-weight: bold;
 }
 
 .expense-item__description {
