@@ -6,4 +6,21 @@
   max-width: 95%;
   border-radius: 12px;
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.new-expense button {
+  font: inherit;
+  background-color: #40005d;
+  border: 1px solid #40005d;
+  cursor: pointer;
+  color: white;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  border-radius: 12px;
+}
+
+.new-expense button:hover {
+  background-color: #510674;
+  border-color: #510674;
 }
