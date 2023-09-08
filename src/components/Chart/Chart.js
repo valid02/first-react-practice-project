@@ -1,21 +1,20 @@
 import './Chart.css';
 import ChartBar from './ChartBar';
 
-const Chart = () => {
+const Chart = (props) => {
+  const dataPointValues = props.dataPoints.map(dataPoints => dataPoints.value);
+  const totalMaximum = Math.max(...dataPointValues);
+
   return ( 
     <div className='chart'>
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
-      <ChartBar />
+      {props.dataPoints.map(dataPoint => (
+        <ChartBar 
+          key={dataPoint.label}
+          value={dataPoint.value}
+          maxValue={totalMaximum}
+          label={dataPoint.label}
+        />
+      ))}
     </div>
    );
 }
